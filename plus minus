@@ -1,0 +1,15 @@
+n=int(input())
+arr=list(map(int,input().split()))
+positive_count=0
+negative_count=0
+zero_count=0
+for i in range(0,len(arr)):
+    if(arr[i]>0):
+        positive_count+=1
+    elif arr[i]<0:
+        negative_count+=1
+    else:
+        zero_count+=1
+print(positive_count/n)
+print(negative_count/n)
+print(zero_count/n)   
