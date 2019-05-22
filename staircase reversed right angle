@@ -1,0 +1,10 @@
+n=int(input())
+r=0
+for i in range(0,n):
+    for j in range(n-r,1,-1):
+        print(" ",end="")
+    for k in range(0,r+1):
+        print("#",end="")
+    r=r+1
+    print()
+
