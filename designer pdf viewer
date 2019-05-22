@@ -1,0 +1,27 @@
+arr = []
+
+def alphabet_position(text):
+    dictt = {'a':h[0],'b':h[1],'c':h[2],'d':h[3],'e':h[4],'f':h[5],'g':h[6],'h':h[7],
+    'i':h[8],'j':h[9],'k':h[10],'l':h[11],'m':h[12],'n':h[13],'o':h[14],'p':h[15],'q':h[16],
+    'r':h[17],'s':h[18],'t':h[19],'u':h[20],'v':h[21],'w':h[22],'x':h[23],'y':h[24],'z':h[25]
+    }
+    
+    new_text = text.lower()
+    for i in list(new_text):
+        for k, j in dictt.items():
+            if k == i:
+                arr.append(j)
+    return ' '.join(arr)
+h=list(map(str,input().split()))
+text=input()
+alphabet_position(text)
+#print(arr)
+maxi=arr[0]
+for i in range(0,len(arr)):
+    if arr[i]>maxi:
+        maxi=arr[i]
+#print(maxi)
+summ=0
+for a in range(0,len(text)):
+    summ=summ+int(maxi)
+print(summ)
