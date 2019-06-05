@@ -1,0 +1,22 @@
+def minion_game(s):
+    
+    length = len(s)
+    the_vowel = "AEIOU"
+    kiven = 0
+    stuart = 0
+    for i in range(length):
+        if s[i] in the_vowel:
+            kiven = kiven + length - i
+        else:
+            stuart = stuart + length - i
+    if kiven > stuart:
+        print ("Kevin %d" % kiven)
+    elif kiven < stuart:
+        print ("Stuart %d" % stuart)
+    else:
+        print ("Draw")
+    # your code goes here
+
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
