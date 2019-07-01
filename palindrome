@@ -1,0 +1,26 @@
+def getScore(s):
+    def reverse(st):
+        return[st]
+    def isPalindrome(st):
+        n=(input())
+        s=list(n)
+        print(s)
+        count =[0]+[n]
+        for i in range (0,len(st)):
+            mul=0
+            count=0
+            count[ord(st[i])]=count[ord(st[i])]+1
+            print(count)
+            rev=reverse(s)
+            if s==rev:
+                while n>0:
+                    r=n%10
+                    print(r)
+                mul=max(length(s)*n*r)
+                print(mul)
+            r=0
+            for i in range(0,n):
+                if(count[i]&1):
+                    r=r+1
+                if r>1:
+                    return
