@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <style>
+        a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 0 0 5px 0;
+  color:greenyellow;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  background-color:greenyellow;
+  -webkit-transition: all .1s ease;
+  transition: all 0.3s ease;  
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+a:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.button1
+{
+    width: 150px;
+    height: 40px;
+    /* text-align: center;  */
+    background-color:burlywood;
+    color: white; 
+    border: none;
+    border-radius: 20px 20px;
+    
+
+}
+.button2
+{
+    width: 120px;
+    height: 40px;
+    /* text-align: center;  */
+    background-color:lightpink;
+    color: white; 
+    border: none;
+    border-radius: 20px 20px;
+    margin-left: 6px;
+
+}
+.ll
+{
+    margin-left: 6px;
+}
+        .nav3
+        {
+            margin-left: 354px;
+          
+        }
+        .nav
+        {
+            margin-left: 655px;
+            
+        }
+        .as{
+            padding: 10px;
+        }
+        .lu
+        {
+            margin-top: -303px;
+            margin-left: 92px;
+        }
+        .card1{
+            margin-top: 30px;
+        }
+        .app{
+            overflow: hidden;
+            width: 229px;
+            height: 229px;
+        }
+        .ll.vert-move {
+    -webkit-animation: mover 5s linear ;
+    animation: mover 5s ;
+}
+.lk.vert-move1 {
+    -webkit-animation: mover1 5s linear ;
+    animation: mover1 5s  ;
+}
+@keyframes mover1 {
+    0% { transform: translateY(700px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes mover {
+    0% { transform: translateY(-700px); }
+    100% { transform: translateY(0px); }
+}
+footer {
+  /* background: blue; */
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+.hp{
+    color:blue;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+       
+    </style>
+</head>
+<body>
+    <div class="nav1" >
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color:blanchedalmond;">
+            <img src="image2.jpg">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link nav ll" href="#">Chat <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ll" href="#">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ll" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link button1" href="#" ><b>Manage Account</b></button>
+                  </li>
+    
+    
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
+
+    </div>
+    <div class="nav2 sticky " style="position: sticky;" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <!-- <a class="navbar-brand" href="#">MYSmartCloud</a> -->
+            <img src="image3.jpg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hosting                     
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin-left: 231px;">
+                      <span class="dropdown-item" href="#">Web hosting</span>
+                      <span class="dropdown-item" href="#">shared hosting</span>
+                      <!-- <span class="dropdown-item" href="#">Something else here</span> -->
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Website
+
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <span class="dropdown-item" href="#">Normal</span>
+                        <span class="dropdown-item" href="#">Preliminary</span>
+                        <span class="dropdown-item" href="#">Premium</span>
+                      </div>
+                    
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Email&Services
+                      
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <span class="dropdown-item" href="#">Our services</span>
+                        <span class="dropdown-item" href="#">Email Services</span>
+                        <!-- <span class="dropdown-item" href="#">Something else here</span> -->
+                      </div>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Security
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <span class="dropdown-item" href="#">SSL certificate</span>
+                    <span class="dropdown-item" href="#">Security measures</span>
+                    <!-- <span class="dropdown-item" href="#">Something else here</span> -->
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <button class="button2 ll" ><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <div class="content">
+        <div class="container" style="padding: 10px 10px;">
+            <div class="img ll">
+                <img src="image4.png">
+                <div class="l lu" style="color: white;">
+                    <h1>Domain Checker</h1>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: crimson;color:white;font-weight: bold;">Search</button>
+                    </form>
+                </div>            
+            </div>
+            <div class="card2" style="margin-top: 230px;padding: 4px;">
+              <div class="item" data-aos="fade-right" data-aos-duration="2000">
+                <div class="row">
+                  <div class="col-sm-3"><br>
+                    <div class="card" style="border: none;">
+                        <div class="shadow p-3 bg-white rounded">
+                            <h5>Managed Word Press</h5>
+                            <p class="hp"  >&#8377;99.00/mo</p>
+                        </div>                     
+                    </div>
+                </div>
+                <div class="col-sm-3"><br>
+                        <div class="card" style="border: none;" > 
+                            <div class="shadow p-3 bg-white rounded">
+                            <h5 >MySmartCloud</h5>
+                            <p class="hp">Signup Free</p>
+                              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"><br>
+                    <div class="card" style="border: none;" >
+                        <div class="shadow p-3  bg-white rounded">
+                            <h5 >Online Starter Bundle</h5>
+                            <p class=" hp">&#8377;56.00/mo</p>
+                        </div>    
+                    </div>
+                </div>                   
+                <div class="col-sm-3"><br>
+                        <div class="card" style="border: none;" >
+                            <div class="shadow p-3  bg-white rounded">
+                              <h5 >Domains</h5>
+                              <p class=" hp"> &#8377;449.00/1st year</p>                                                        
+                        </div>   
+                    </div>
+                </div>
+
+                </div>
+
+                   
+                       
+                        
+                    </div>
+                </div>
+                
+                <div class="card3"><br>
+                  <div class="item" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="row">
+                        <div class="col-sm-3">                     
+                            <div class="card" style="border: none;">
+                                <div class="shadow p-3 bg-white rounded">
+                                    <h5>SSL Security</h5>                                
+                                      <p class=" hp">&#8377;293.25/mo</p>                           
+                                </div>
+                            </div>        
+                        </div>                       
+                        <div class="col-sm-3">
+                            <div class="card" style="border: none;" >
+                                <div class="shadow p-3 bg-white rounded">
+                                    <h5 >Websites+Marketing</h5>
+                                    <p class=" hp">Free Trial.</p>
+                                </div>
+                            </div>   
+                        </div>   
+                        <div class="col-sm-3">                   
+                            <div class="card" style="border: none;">
+                                <div class="shadow p-3 bg-white rounded">
+                                    <h5 >VPS</h5>
+                                      <p class=" hp">&#8377;439.00.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card" style="border: none;">
+                                <div class="shadow p-3 bg-white rounded">
+                                    <h5 class="card-title">Dedicated Hosting</h5>                    
+                                    <p class="card-text hp">&#8377;5079/mo</p>
+                                </div>
+                            </div>
+                                
+                        </div>   
+                      </div>    
+                        </div>
+                    </div>
+                </div>
+    
+                
+        <div class="container">
+            <div class="card1">
+                <div class="row">
+                    <div class="col-sm-3 ">
+                        <div class="card border-success mb-3 ll vert-move " style="max-width: 18rem;">
+                            <div class="card-header bg-transparent border-success app">
+                                <img src="image5.jpeg">
+                            </div>
+                            <div class="card-body text-success">
+                              <h5 class="card-title">Hosting</h5>
+                              <p class="card-text" style="color: black;">Hosting is effectively the process of using a server to host a website, and there are all sorts of different types of web hosting available out there on the market. Hostigner, just like most .</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-3">
+                        <div class="card border-success mb-3 lk vert-move1" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent border-success app">
+                                <img src="image13.jpg" style="width: 230px;">
+                            </div>
+                            <div class="card-body text-success">
+                              <h5 class="card-title">Cloud Hosting</h5>
+                              <p class="card-text" style="color:black;">Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the u.</p>
+                            </div>
+                            
+                          </div>
+    
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card border-success mb-3 ll vert-move" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent border-success app">
+                                <img src="image12.jpg">
+                            </div>
+                            <div class="card-body text-success">
+                              <h5 class="card-title">VPS Hosting</h5>
+                              <p class="card-text"style="color:black;">Virtual Private Servers. A Virtual Private Server (VPS) uses virtualization software to partition physical servers into multiple "virtual" servers—each having t.</p>
+                            </div>
+                         
+                          </div>
+    
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card border-success mb-3 lk vert-move1" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent border-success app">
+                                <img src="image17.jpg">
+                            </div>
+                            <div class="card-body text-success">
+                              <h5 class="card-title">Dedicated Hosting </h5>
+                              <p class="card-text"style="color:black;">A dedicated hosting service, dedicated server, or managed hosting service is a type of Internet hosting in which the client leases an entire server not shared with anyone else.</p>
+                            </div>
+                           
+                          </div>
+    
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+        </div>
+        <div class="footer">
+            <footer class="mainfooter" role="contentinfo" >
+                <div class="footer-middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="footer-pad">
+                                            <h4>HOSTING SERVICES</h4>
+                                            <ul class="list-unstyled">
+                                              <li><a href="#">E-Commerce</a></li>
+                                              <li><a href="#">WordPress Hosting</a></li>
+                                              <li><a href="#">Student Web Hosting</a></li>
+                                              <li><a href="#">cPanel Hosting</a></li>
+                                              <li><a href="#">Blog Hosting</a></li>
+                                              <li><a href="#">Standard Web Hosting</a></li>
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="footer-pad">
+                                            <h4>VPS & CLOUD</h4>
+                                            <ul class="list-unstyled">
+                                              <li><a href="#">VPS Home</a></li>
+                                              <li><a href="#">Window VPS</a></li>
+                                              <li><a href="#">WordPress VPS</a></li>
+                                              <li><a href="#">cPanel VPS</a></li>
+                                              <li><a href="#">Debian VPS</a></li>
+                                              <li><a href="#">Webuzo VPS</a></li>
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="footer-pad">
+                                            <h4>DEDICATED SERVICES</h4>
+                                            <ul class="list-unstyled">
+                                              <li><a href="#">Dedicated Home</a></li>
+                                              <li><a href="#">Storage Servers</a></li>
+                                              <li><a href="#">10Gbps Dedicated Servers</a></li>
+                                              <li><a href="#">GPU dedicated Servers</a></li>
+                                              <li><a href="#">Rapid Deploy Servers</a></li>
+                                              <li><a href="#"></a></li>
+                                            </ul>
+                                          </div>
+    
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="footer-pad">
+                                            <h4>WHY US</h4>
+                                            <ul class="list-unstyled">
+                                              <li><a href="#">About Us</a></li>
+                                              <li><a href="#">Network </a></li>
+                                              <li><a href="#">Data Centre</a></li>
+                                              <li><a href="#">Our Team</a></li>
+                                              <li><a href="#">Reviews</a></li>
+                                              <li><a href="#"></a></li>
+                                            </ul>
+                                          </div>
+        
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="col-md-3">
+                                            <h4>Follow Us</h4>
+                                            <ul class="social-network social-circle">
+                                             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"><br></i></a></li>
+                                             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>				
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 copy">
+                                <p class="text-center">&copy; Copyright 2019-MySmartCloud.  All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+<script>
+    AOS.init();
+  </script>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+</html>
