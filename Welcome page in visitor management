@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   
+<style>
+    .footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:100px;
+}
+.sell
+{
+    padding:50px;
+}
+    .banner
+    {
+      background-image: url("image22.jpg");
+
+
+        background-attachment: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        width: 98%;
+    }
+    .navbar {
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    background:whitesmoke;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    z-index: 662;
+}
+.nav-link1 a:hover{
+color: aqua !important;
+}
+.change
+{
+    height: 300px;
+    width: 450px;
+}
+.make
+{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.make1
+{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.has
+{
+  letter-spacing: 1px;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.a{
+    color:white;
+}
+a{
+  color: black;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+}
+.lk{
+  color: black;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: turquoise;
+
+}
+.see
+{
+  margin-left: 68px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.come
+{
+  background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.come1
+{
+  background-color: #20bf55;
+background-image :linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+border: none;
+border-radius: 25px;
+
+
+}
+.have
+{
+  box-shadow: 5px 5px 5px;
+}
+.sho{
+  /* background: antiquewhite; */
+    width: 314px;
+    height: 289px;
+    text-align: justify;
+    margin-left: 67px;
+    border-radius: 25px;
+}
+.sho1{
+  padding-top: 20px;
+  padding-left: 14px;
+  padding-top: 38px;
+  letter-spacing: 1px;
+  font-weight:bold ;
+  margin-top: -8px;
+    margin-left: -12px;
+
+  
+}
+.hop{
+  padding-left: 44px;
+  padding-top: 38px;
+}
+.cap{
+  background-color: aliceblue;
+    padding: 25px 51px;
+    width: 300px;
+    border-radius: 35px;
+
+}
+.tex{
+  text-align: center;
+}
+.p{
+    margin-top: -20px;
+    margin-bottom: 1rem;
+	}
+	/* html,body {
+	margin: 0;
+	height: 100%;
+	/* background:#D4E157; */
+	/* text-align: center;
+	font-family: 'Ubuntu';
+	padding: 100px; */
+	/* background-image: url("image9.jpeg"); */
+	/* background:#62837B;
+} */ */
+.chance
+{
+  margin: 0;
+	height: 100%;
+	/* background:#D4E157; */
+	text-align: center;
+	font-family: 'Ubuntu';
+	padding: 100px;
+	/* background-image: url("image9.jpeg"); */
+	background:#62837B;
+}
+.frame{
+	width: 600px;
+	height: 350px;
+	margin: 0px auto 0;
+	position: relative;
+	background: #435d77;
+	border-radius:0 0 40px 40px; 
+}
+#button_open_envelope{
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	z-index: 311;
+	top: 250px;
+	left: 208px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 26px;
+	padding:15px 0; 
+	border: 2px solid #fff;
+	transition:.3s;
+  text-align: center;
+  background-image :linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+#button_open_envelope:hover{
+	background: #FFf;
+	color: #2b67cb;
+	transform:scale(1.1);
+	transition:background .25s, transform .5s,ease-in;
+	cursor: pointer;
+}
+.message{
+	position: relative;
+	width: 580px;
+	min-height:300px;
+	height: auto;
+	background: #fff;
+	margin: 0 auto;
+	top: 30px;
+	box-shadow: 0 0 5px 2px #333;
+	transition:2s ease-in-out;
+	transition-delay:1.5s;
+	z-index: 300;
+}
+.left,.right,.top{width: 0;	height: 0;position:absolute;top:0;z-index: 310;}
+.left{	
+	border-left: 300px solid #337efc;
+	border-top: 160px solid transparent;
+	border-bottom: 160px solid transparent;
+}
+.right{	
+	border-right: 300px solid #337efc;
+	border-top: 160px solid transparent;
+	border-bottom: 160px solid transparent;;
+	left:300px;
+}
+.top{	
+	border-right: 300px solid transparent;
+	border-top: 200px solid #03A9F4;
+	border-left: 300px solid transparent;
+	transition:transform 1s,border 1s, ease-in-out;
+	transform-origin:top;
+	transform:rotateX(0deg);
+	z-index: 500;
+}
+.bottom{
+	width: 600px;
+	height: 190px;
+	position: absolute;
+	background: #2b67cb;
+	top: 160px;
+	border-radius:0 0 30px 30px;
+	z-index: 310; 
+}
+
+.open{
+	transform-origin:top;
+	transform:rotateX(180deg);
+	transition:transform .7s,border .7s,z-index .7s ease-in-out;
+	border-top: 200px solid #2c3e50;
+	z-index: 200;
+}
+.pull{
+	-webkit-animation:message_animation 2s 1 ease-in-out;
+	animation:message_animation 2s 1 ease-in-out;
+	-webkit-animation-delay:.9s;
+	animation-delay:.45s;
+	transition:1.5s;
+	transition-delay:1s;
+	z-index: 350;
+}
+#name,#email,#phone,#messarea,#send{
+	margin: 0;
+	padding: 0 0 0 10px;
+	width: 570px;
+	height:40px;
+	float: left;
+	display: block;
+	font-size: 18px;
+	color: #2b67cb;
+	border:none;
+	border-bottom:1px solid #bdbdbd;
+	letter-spacing: normal;
+}
+#messarea{
+	height: 117px;
+	width: 560px;
+	overflow: auto;
+	border:none;
+	padding: 10px;
+}
+#send{ 
+	width:   580px;
+	padding: 0;	
+	border:  none;
+	cursor:  pointer;
+	background: #7CB342;
+	color: #fff;
+	transition:.35s;
+	letter-spacing: 1px;
+}
+#send:hover{background:tomato;transition:.35s;}
+
+::-moz-placeholder{color: #7CB342;font-family: 'Ubuntu';font-size: 20px;opacity: 1;} 
+::-webkit-input-placeholder {color: #7CB342; font-family: 'Ubuntu';font-size: 20px;}
+*:focus {outline: none;}
+input:focus:invalid,textarea:focus:invalid {
+ /* when a field is considered invalid by the browser */
+    background: #fff url(images/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border:1px solid #b03535;
+}
+input:required:valid,textarea:required:valid { 
+	/* when a field is considered valid by the browser */
+    background: #fff url(images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+
+@-webkit-keyframes message_animation {
+	0%{
+		transform:translatey(0px);
+		z-index: 300;
+		transition: 1s ease-in-out;
+	}
+	50%{
+		transform:translatey(-340px);
+		z-index: 300;
+		transition: 1s ease-in-out;
+	}
+	51%{
+		transform:translatey(-340px);
+		z-index: 350;
+		transition: 1s ease-in-out;
+	}
+	100%{
+		transform:translatey(0px);
+		z-index: 350;
+		transition: 1s ease-in-out;
+	}
+}
+@keyframes message_animation {
+	0%{
+		transform:translatey(0px);
+		z-index: 300;
+		transition: 1s ease-in-out;
+	}
+	50%{
+		transform:translatey(-340px);
+		z-index: 300;
+		transition: 1s ease-in-out;
+	}
+	51%{
+		transform:translatey(-340px);
+		z-index: 350;
+		transition: 1s ease-in-out;
+	}
+	100%{
+		transform:translatey(0px);
+		z-index: 350;
+		transition: 1s ease-in-out;
+	}
+}
+.direct-contact-container {
+  max-width: 400px;
+  float: right;
+  margin-top: 5px;
+  /* background-image: url("image9.jpeg"); */
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color:black
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  font-style: unset;
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: black;
+  text-decoration: none;
+}
+.fa-2x {
+    font-size: 2em;
+    color: chartreuse;
+}
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  top: 0;
+  left: -20px;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin: 10px auto;
+  line-height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #111;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.8); ;
+}
+.df
+{ color: linear-gradient(315deg, #20bf55 0%, #01baef 74%);; text-decoration: none; }
+
+.arrow {
+  
+  margin: 8% 0;
+  margin-left: -40px;
+  margin-top: -29px;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg have">
+      <a class="navbar-brand" href="#"><img src="image11.png" style="width: 87px;height: 69px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link1" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="show.html">Contact Us</a>
+          </li>
+        </ul>
+        <ul>
+          <l class="nav-item">
+              <a class="btn btn-primary come1" data-toggle="modal" data-target="#exampleModal" nav-link " href="#" style="margin-top: 19px;"> Login</a>
+            </l>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="email" >Email address:</label>
+                  <input type="email" class="form-control" id="email"style="width: 464px;">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox"> Remember me</label>
+                </div>
+                
+              </form>
+   
+              
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-default come1" data-dismiss="modal">Submit</button>
+              <!-- <button type="button" class="btn btn-secondary come1" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary come1"  data-dismiss="modal">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="banner">
+          <div class="row">
+              <div class="col-sm-6" style="margin: 157px 0px;">
+                  <div class="content" >
+                    <div class="title">
+                      <div class="container">
+                        <h3 class="tex" style="font-weight: bold;font-style: italic;">For Creating a Customer Experience</h3>
+                      <p class="tex" style="font-weight: bold;font-style: italic;">Easy to setup and ready to use in 5 minutes</p><br>
+                    </div>
+                      </div>
+                   
+                      <div class="card" style="margin-left: 170px;width: 287px;height: 231px;"><br>
+                          <form  class="sho">
+                            <div classs="sho1" style="padding-top: 48px;margin-left: -45px;" >
+                            
+                          <input type="text"  id="name" placeholder="Name" style="margin-top: -44px;border-color: black;width: 244px;text-align: center; padding-left: 10px;padding-top: 8x;color: black;border-radius: 25px;">
+                        </div>
+                        <div class="sho1" style="margin-left: -55px;">
+                         
+                          <input type="email"  id="email" placeholder="Email" style="margin-top: -14px;border-color: black;width: 244px; text-align: center; padding-left: 10px;padding-top: 8px;color: black;border-radius: 25px;">
+                        </div>
+                        <button type="submit" class="btn btn-dark come1" style=" margin-top: 0px; text-align: center; margin-left: 0px;margin-top: 39px; border-radius: 25px;width: 50%;">Get Started</button>                        
+                        <div class="arrow bounce">
+                          <a class="fa fa-arrow-right fa-2x df" href="#"></a>
+                        </div>
+                      
+                      </form>
+                       
+                      </div>
+                    </div>
+                 
+                   </div>
+              <div class="col-sm-6" style="margin: 157px 0px;">
+                <img src="image1.webp" class="change">
+
+              </div>
+          </div>
+      </div>
+      <div class="container"><br>
+        <div class="dead">
+          <h1 class="has"style="margin-left: 211px;">The ultimate one stop solution</h1>
+          <p>Visitor Management brings you a lot of features to impress your visitors from the time they enter the building till the time they step out.</p>
+        </div><br>
+          <div class="row"><br>
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image34.png" class="card-img-top make1" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Enhance Your Security</h5>
+                      <p class="card-text"> Enchancing Security means safety, as well as the measures taken to be safe or protected.We have provided many safety measures to keep your account in a more secure way.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image.gif" class="card-img-top make1" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Keep It Simple</h5>
+                      <p class="card-text">Replace the intercom and register book for a technologically-forward passcode-based solution that makes it easy for residents to participate in the process of approving their visitors.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image35.png" class="card-img-top make1" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">One App Operation</h5>
+                      <p class="card-text">Application Operations is an emerging technology management team that was formed to address a whole new set of performance management and security purposes.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+
+              </div>
+          </div>
+          <div class="row"><br>
+            <div class="col-sm-4"><br>
+              <div class="card" style="width: 18rem;">
+                  <img src="images37.png" class="card-img-top make1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Self Check-in and Check-out</h5>
+                    <p class="card-text">Our Visitor Management System allows the user to prepare for planned visits, and review a list of visitors due arrive, for security and guard management purposes.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4"><br>
+              <div class="card" style="width: 18rem;">
+                  <img src="image37.png" class="card-img-top make1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Manage Visitors Efficiently</h5>
+                    <p class="card-text">Visitors needs an efficient visitor management system. A log book just can’t do the job; now that better performing and easier to use solutions are available. </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4"><br>
+              <div class="card" style="width: 18rem;">
+                  <img src="image.webp" class="card-img-top make1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Simplify Administration Process</h5>
+                    <p class="card-text">Simplifying administrative processes means limiting them to those that do not result in unnecessary delays, and adopting measures to facilitate their compliance.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+
+            </div>
+        </div>
+          <div class="main"><br>
+              <h1 style="margin-left: 240px;">Visitor Management is Used by</h1>
+          </div>
+          <div class="ico"><br>
+                  <div class="row">
+                      <div class="col-sm-3">
+         
+                            <img src="image28.jpg"class="card-img-top make " alt="...">
+                              <p class="see" >Offices.</p>
+                            </div>
+                          
+                      <div class="col-sm-3">
+                        
+                            <img src="image32.png" class="card-img-top make" alt="...">
+                              <p class="see">Schools.</p>
+                            </div>
+                          
+                      <div class="col-sm-3">
+                      
+                            <img src="image33.png" class="card-img-top make" alt="...">
+                              <p class="see">Events.</p>
+                            </div>
+                      <div class="col-sm-3">
+         
+                            <img src="image36.jpg" class="card-img-top make" alt="...">
+                              <p class="see">Co-Working.</p>
+                            </div>
+
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="container" style="padding-bottom: 54px;"><br>
+              <div class="main"><br>
+                <h1 style=" text-align: center; ">Contact Us</h1>
+                <p style="text-align: center;">Let's Make Something Awesome Together. Drop us a line if you are intersted in visiting us</p>
+              </div>
+              <div class="row">
+                <div class="col-sm-6" style="padding: 10px;margin-left: -153px;">
+                  <div class="direct-contact-container" >
+                    <h1 style="padding-top: 34px;">Contact Details</h1>
+                    <ul class="contact-list">
+                      <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">57, Kalaignar Karunanidhi Rd, MGR Nagar, Nesapakkam, Chennai, Tamil Nadu 600078</span></i></li>
+                      
+                      <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">123456789</a></span></i></li>
+                      
+                      <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">cto@anlyz360.com</a></span></i></li>					  
+                    </ul>
+                    <hr>
+                    <ul class="social-media-list">
+                      <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </li>
+                      <!-- <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                      </li> -->
+                    </ul>
+                    <hr>
+                
+                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                
+                    </div>
+                  
+                  </div>
+                <div class="col-sm-6 chance"style="margin-left: 101px;margin-top: 64px;">
+                  <div class = "frame">
+                    <div id = "button_open_envelope">
+                            <p class="p" style="margin-top: -20px;margin-bottom: 1rem;">For Free Demo</p>
+                          </div>
+                          <div class = "message">
+                            <form method="post" action="">
+                              <input type="text" name="name" id="name" placeholder=" Name* " required>
+                          
+                              <input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
+                            
+                              <input type="text" name="phone" id="phone" placeholder=" Phone (optional)" autofocus> 
+                            
+                              <textarea name="message" id="messarea" placeholder=" Message* " required></textarea>
+                          
+                              <input type="text" name="address" id="address" style="display: none;">
+                              <input type="submit"  value="Send" id="send" style="background-color: #20bf55;;">
+                            </form>
+                          </div>
+                          <div class = "bottom"></div>			
+                          <div class = "left"></div>
+                          <div class = "right"></div>
+                          <div class = "top"></div>
+                          <script src="js/script.js"></script>
+                        </div>
+                </div>
+              </div>
+            </div>
+                          
+      <div class="footer" style="margin-top: 0px;">
+          <div class="container">
+
+               <div class="row sell" >
+                  <div class="col-sm-3">
+                    <h6 style="text-align: center;">About Us</h6>
+                    <p style="letter-spacing: 1px;">
+                        Anlyz360 Technologies is a private limited software company that has developed an application to bring businesses closer to their clients. 
+                    </p>
+                   </div>
+                   <div class="col-sm-3">
+                    <h6 style="text-align: center;">Features</h6>
+                    <ul class="footer-links">
+                      <a class="a" href="#">Visitor Management</a><br>
+                      <a class="a" href="#">Visitor Photos</a><br>
+                      <a class="a" href="#">Visitor Badges</a><br>
+                      <a class="a" href="#">Feedback</a><br>
+                      <a class="a" href="#">Security</a><br>
+                    </ul>
+                  </div>
+                <div class="col-sm-3">
+                    <h6 style="text-align: center;margin-left: -114px;">Contact Us</h6>
+                    <ul class="footer-links">
+                      <a href="#" class="btn btn-default come" style="border-radius:25px;;color: white;margin-top: 6px;"><i class="fa fa-facebook-f"></i></a><br>
+                      <a href="#" class="btn btn-defaul come1" style="border-radius:25px;color: white;margin-top: 6px;"><i class="fa fa-instagram"></i></a><br>
+                      <a href="#" class="btn btn-default"style="border-radius:25px;background-color:blue ;color: white;margin-top: 6px;"><i class="fa fa-linkedin"></i></a><br>
+                      <a href="#" class="btn btn-default"style="border-radius:25px;background-color:blue;color: white;margin-top: 6px;"><i class="fa fa-twitter"></i></a><br>
+                      <!-- <li></li>
+                      <li></li> -->
+                    </ul>
+
+                  </div>
+                 <div class="col-sm-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.043988268858!2d80.19850774992341!3d13.032870817013197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267bd8aadfa7b%3A0xa97a73db3b6c5ab2!2sAnlyz360%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1583399764458!5m2!1sen!2sin" width="150%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                 </div>
+
+              </div>
+            
+          </div>
+        </div>
+          <script>
+		$(document).ready(function(){
+	$('.frame').click(function(){
+		$('.top').addClass('open');
+		$('.message').addClass('pull');
+	})
+});
+        </script>
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+</body>
+</html>
