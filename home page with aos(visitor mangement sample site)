@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+
+   
+    <style>
+        .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 100px;
+  margin-right: 10px;
+  counter-increment: carousel-cell;
+  background:white;
+  border-radius: 5px;
+  border-color: white;
+}
+
+
+.carousel-cell.is-selected {
+  background:white;
+  text-align: center;
+}
+footer{
+  color: white;
+}
+footer a{
+  color: #bfffff;
+}
+footer a:hover{
+  color: white;
+}
+
+.footer-bottom{
+  background: white;
+  padding: 2em;
+}
+.footer-top{
+  background:white;  
+}
+.footer-middle{
+   background:white;
+  padding-top: 2em;
+  color: white;
+}
+/**Sub Navigation**/
+.subnavigation-container{
+  background: blue
+}
+.subnavigation .nav-link{
+  color:black;
+  font-weight: bold;
+}
+.subnavigation-container{
+  text-align: center;
+}
+.subnavigation-container .navbar{
+  display: inline-block;
+  margin-bottom: -6px; /* Inline-block margin offffset HACK -Gilron */
+}
+.col-subnav a{
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+.col-subnav .active{
+  border-top:5px solid orange;
+ background: blue;
+  color: black;
+}
+.video {
+    width: 100%;
+    border: 1px solid black;
+}
+.wrapper{
+    display:table;
+    width:auto;
+    position:relative;
+    width:50%;
+}
+.playpause {
+    background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+    background-repeat:no-repeat;
+    width:50%;
+    height:50%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+#category{
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align:left;
+}
+#category ul{
+  position: relative;
+  left: 50%;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+#category li {
+  float:left;
+  position: relative;
+  margin: 0 0px 0 0;
+  border-bottom: 0;
+  width:106px;
+  text-align:center;
+}
+#category li a {
+  text-decoration:none;
+  display:block;
+  padding: 8px 15px;
+  color: #ffffff;
+  font: 15px 'Trebuchet MS', Trebuchet, sans-serif;
+  border-radius: 10px 10px 0 0;
+  background-color: #4D5960;
+}
+#category li a:hover {
+  background-color: #DBE4EA;
+  color: #0b5394;
+}
+#txt_cont{
+  position:relative;
+  width: 100%;
+  font: 27px 'Trebuchet MS', Trebuchet, sans-serif;
+  line-height:20px;
+  border:1px solid #ccc;
+  border-top: 0;
+  margin-left:-0px;
+  left:50%;
+}
+.txt_tab{
+  padding:8px;
+}
+#category ul li a.hover_tab{
+  background-color:green;
+  color:#0b5394;
+}
+a:hover, a:active 
+{
+  border: 0px 2px solid green;
+  }
+  .navbar {
+            position: fixed;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 2.5rem 1rem;
+            width: 100%;
+            
+            z-index: 9999999;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active,.nav-link1,.nav-link1.active {
+            color: white;
+            background-color: #dc3545;
+            padding-left: -19px;
+            width: 243px;
+            background-size: 11px;
+            background-position: center;
+            height: 61px;
+            /* border-color: #dee2e6 #dee2e6 #fff; */
+        }
+        #first, #second {
+  height: 50px;
+  width: 200px;
+  background-image: url("");
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+
+#first:hover ~ #second {
+  background-image: url("home20.jpg");
+  width: 300px;
+  height: 300px;
+}
+
+#third, #fourth {
+  height: 50px;
+  width: 200px;
+  background-image: url("");
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+#third:hover ~ #fourth {
+  background-image: url("home29.jpg");
+  width: 300px;
+  height: 300px;
+}
+#fifth, #sixth {
+  height: 75px;
+  width: 200px;
+  background-image: url("");
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+#fifth:hover ~ #sixth {
+  background-image: url("home28.jpg");
+  width: 300px;
+  height: 300px;
+}
+#seventh, #eighth {
+  height: 50px;
+  width: 200px;
+  background-image: url("");
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+#seventh:hover ~ #eighth {
+  background-image: url("home26.jpg");
+  width: 400px;
+  height: 300px;
+}
+.tab-content>.active {
+    display: block !important;
+}
+
+        
+ </style>
+
+</head>
+<body>
+    <div data-aos="fade-right" data-aos-duration="4000" class="nav;" style="margin-top: 48px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;z-index: 1;margin-top: -52px;">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav" style="margin-left: 705px;">
+                <li class="nav-item active" style="margin-left: -483px;">
+                  <div class="dropdown">
+                    <a class="nav-link " href="#" style="margin-right: 42px;" type="text" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Pricing
+                    </a>
+                    <div class="dropdown-content " aria-labelledby="dropdownMenuButton" style="background-color: white;">
+                        <h1 style="font-size: xx-large;font-style: italic; text-align: center;" >Site subscription</h1>
+                        <h1 style="font-size: xx-large;font-style: italic;color: limegreen; text-align: center;">$380 per year</h1>
+                        <img src="home3.svg" style="width: 50px;height: 28px;margin-left: 40px;">
+                      <a class="dropdown-item a" href="#" style="margin-left: 72px;margin-top: -28px;" >See Pricing Options</a><br>
+                      <img src="home2.svg" style="width: 50px;height: 25px;margin-left: 41px;margin-top: -25px;" >
+                      <a class="dropdown-item a" href="#" style="margin-left: 73px;margin-top: -35px;">Stand Options</a>
+                      <i style="font-size:24px; margin-left: 52px; color:limegreen;" class="fa" >&#xf0e0;</i> 
+                      <a class="dropdown-item a" href="#" style="margin-top: -25px;margin-left: 75px;" >Contact Us</a><br>
+                      <button type="button" class="dropdown-item" style="background-color:limegreen;border-radius: 25px;color:white; width: 105px;border-color:limegreen; margin-left: 15px;">Free Trial</button>
+                      <button type="button" class="dropdown-item" style="background-color:white;border-radius: 25px;color: #000; width: 155px;height:50px ; border-color:lightgrey;margin-left: 147px;margin-top: -39px;">Buy Now</button>
+                     
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item" >
+                  <div class="dropdown">
+                    <a class="nav-link" href="#" style="margin-right: 42px;" type="text" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Features
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a class="nav-link" href="#" style="margin-right: 42px;" type="text" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Education
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                     
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a class="nav-link" href="#" style="margin-right: 42px;" type="text" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-info" style="background-color:white;border-radius: 25px;color: #000; width: 75px;border-color:lightgrey;margin-right: 0pxpx;">$USD</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-light"style="margin-right: 72px; width: 75px">Log in</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-info" style="background-color:limegreen;border-radius: 25px;color:white; width: 105px;border-color:limegreen; margin-left: -75px;">Free Trial</button>
+                </li>
+
+              </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div data-aos="fade-right" data-aos-duration="2000" class="angle1" style="padding-top: 150px;">
+            <div class="row">
+                <div class="col-sm-6" style="padding: 20px; margin-top: 48px;"> 
+                    <h1 style="font-size: 73px;font-weight: bold;font-style: italic;letter-spacing: 1px;"> Smart Visitor Environment</h1>
+                    <p style="letter-spacing: 1px;font-size: 15px;">  The secure alternative to visitor books and timesheets. Record the movement of people on site with one of the world's fastest growing visitor management apps.</p>
+                    <p>
+                        <button type="button" class="btn btn-info" style="background-color:limegreen;border-radius: 25px;color:white; width: 155px;height: 50px; border-color:limegreen;margin-left: 37px;">Try For Free</button>
+                    <a href="#" style=" margin-left: -140px;">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    <button type="button" class="btn btn-info" style="background-color:white;border-radius: 25px;color: #000; width: 155px;height:50px ; border-color:lightgrey;margin-left: 147px;;">Buy Now</button>
+                    <a href="#" style="margin-left: -132px;">
+                        <span class="glyphicon glyphicon-credit-card"></span>
+                      </a>
+  
+                    </p>
+                    
+                </div>
+                <div class="col-sm-6">
+                  <div class="wrapper" style="margin-top: 48px;">
+                    <img src="home.png">
+                    <video class="video" style="margin-top: -533px;margin-left: 113px;margin-bottom: 47px;border: none;width: 410px;height: 410px;">
+                        <source src="home.webm" type="video/mp4">
+                    </video>
+                  <div class="playpause" style="display: none;"></div>
+                </div>
+                  <button style=" background-color:limegreen;border-radius: 25px 29px 0px 29px;color:white; width: 155px;height: 50px; position: fixed; border-color:limegreen;margin-left: 427px;z-index: 1;"><i class='fas fa-angle-right'></i > <b style="margin-left: 10px;">Contact us </b></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="angle2" style="padding: 50px;margin-top: 48px;">
+            <div class="row" >
+                <div data-aos="fade-down" data-aos-duration="2000" class="col-sm-6">
+                  <div class="wrapper">
+                    <video class="video" style="width: 400px;height: 400px;border: none;margin-top: -52px;"> 
+                        <source src="https://itg.digital/video/create-illustration-video-style-1.mp4" type="video/mp4">
+                    </video>
+                  <div class="playpause" style="display: none;"></div>
+                </div>
+                   
+
+                </div>
+                <div data-aos="fade-right" data-aos-duration="2000" class="col-sm-6">
+                    <h1 style="font-size: 73px;font-weight: bold;font-style: italic;letter-spacing: 1px;"> The best first impression</h1>
+                    <p style="letter-spacing: 1px;margin-top: 40px;font-size: 15px;">Sign In App is a modern, enjoyable way to sign in visitors. Create a positive impression from the moment guests walk into your reception. As your visitors sign in, their details are stored in a secure online portal providing you with a real-time fire list and reports. Join the millions signing in with Sign In App each year</p>
+                    <p style="letter-spacing: 1px;margin-top: 40px;font-size: 15px;">"The team at Sign In App have gone above and beyond in quickly incorporating new function ideas, often within a matter of days which has been a refreshing experience, so we’ve been very impressed with the levels of customer service."
+
+                      Alex Holmes, Derby College</p>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2000" class="row">
+       
+          <ul class="nav nav-pills" id="myTab" role="tablist">
+              <li class="nav-item nav-item1">
+                  <a class="nav-link nav-link2 active show" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="background-color: white;color: #000;text-align: center;">Total control of your data</a>
+              </li>
+              <li class="nav-item nav-item1">
+                  <a class="nav-link nav-link2" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"style="background-color: white;color: #000;text-align: center;">Hassle free experience</a>
+              </li>
+              <li class="nav-item nav-item1">
+                  <a class="nav-link nav-link2" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"style="background-color: white;color: #000;text-align: center;">Staff sign in</a>
+              </li>
+          </ul>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000" class="tab-content" id="myTabContent">
+            <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="slider-content">
+                    <h2 class="slider_content_h2">Total control of your data</h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <br>
+                            <p>
+                              <p style="letter-spacing: 1px;">Having total control of your data is more important than ever. Personal, identifiable data is inevitably captured during any sign in process. Sign In App helps you balance holding critical information in the interests of safety and reporting, while respecting and maintaining the privacy of your guests.</p>
+                            </p>
+                            <div class="ll">
+                              <div id="first">hassle experience</div>
+                              <div id="second" style="margin-left: 751px;margin-top: -176px;">
+                              </div>
+                              <div id="third" style="margin-top: 96px;">Control your data</div>
+                              <div id="fourth" style="margin-left: 708px;margin-top: -226px;">
+                              </div>
+                              <div id="fifth" style="margin-top: 113px;">Show your privacy policy</div>
+                              <div id="sixth" style="margin-left: 708px;margin-top: -236px;">
+                              </div>
+                              <div id="seventh" style="margin-top: 103px;"> privacy options</div>
+                              <div id="eighth" style="margin-left: 710px;margin-top: -276px;">
+                              </div>
+                  
+                          </div>
+                          </div>   
+                          <div class="col-sm-6">
+                              
+                          </div>
+                      </div>         
+                  </div>     
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="slider-content">
+                          <h2 class="slider_content_h2">Hassle free experience</h2>
+                          <br>
+                          <div class="row">
+                              <div class="col-sm-6">
+                                  <p>Sign In App is designed to be a hassle free experience from the start. We like to keep things simple, so every feature is yours as part of your site subscription with no limits to the number of visitors, staff, devices or sign ins you can have. Regular monthly updates are included, so you never miss out on new features.</p>
+                              </div>
+                              <div class="col-sm-6">
+                                  <img src="home28.jpg">
+                              </div>
+
+                          </div>
+                          
+                      
+                     
+                  </div>  
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <div class="slider-content">
+                      <h2 class="slider_content_h2">Staff sign in </h2>
+                      <br>
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <p>Why should visitors have all the fun? With Sign In App your staff and HR/Finance departments can benefit too. Included in your subscription is a staff sign in solution helping you to easily see who is on site in the event of an emergency. You can also record hours, opening up flexible working options, and empower your staff with our free companion app.</p>
+                          </div> 
+                          <div class="col-sm-6">
+                              <img src="home20.jpg">                                
+                          </div>         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+          <div class="row">
+            <div  data-aos="fade-left" data-aos-duration="2000"  class="col-sm-6" style="padding: 20px;margin-top: 88px;">
+                <img src="home4.svg" style="height: 50px;width: 50px;">
+                <h1 style="font-size: xx-large;font-style: italic; " >Simple pricing, no hidden costs</h1>
+                <p style="letter-spacing: 1px; font-size: 15px;">We know hidden costs can be a pain, so we don’t charge you extra for features, and there are no limits to the number of staff, visitors or iPads you can connect to a site. It’s simple, one subscription for each site you have and you can pay by invoice or credit card. For more information, check out our frequently asked questions.</p>
+                
+
+            </div>
+            <div  data-aos="fade-down" data-aos-duration="2000"  class="col-sm-6" style="padding: 20px;">
+                <img src="home5.svg"style="height: 50px;width: 50px;margin-top: 88px;">
+                <h1 style="font-size: xx-large;font-style: italic; " >Proudly developed in the UK</h1>
+                <p style="letter-spacing: 1px; font-size: 15px;">Sign In App was designed first and foremost to enhance the visitor experience and improve fire safety. We employ our own developers, designers and support team, all based at our barn in Northamptonshire. We aim to build software that’s a joy to use, delivers great value for money and continually evolves with new features and functionality.</p>
+
+
+            </div>
+        </div>
+        
+        <div data-aos="fade-right" data-aos-duration="2000" class="row">
+            <div class="col-sm-12" style="overflow: hidden;">
+                <h4 style="text-align: center;margin-top: 48px;"> As seen in</h4>
+            </div>
+        </div>
+        <marquee behavior="scroll" direction="left" scrollamount="8">
+       
+          <img src="home6.webp">
+      
+          <img src="home7.webp">
+    
+          <img src="home8.webp">
+     
+          <img src="home9.webp">
+      
+          <img src="home10.webp">
+   
+          <img src="home11.webp">
+    
+          <img src="home12.webp">
+   
+          <img src="home13.webp">
+      
+          <img src="home14.webp">
+     
+          <img src="home15.webp">
+   
+          <img src="home16.webp">
+      
+  </marquee>
+       <div data-aos="fade-right" data-aos-duration="2000" class="kk" style="padding: 5px;">
+        <button style=" background-color:limegreen;border-radius: 25px;color:white; width: 255px;height: 50px; border-color:limegreen;margin-left: 427px;margin-top: 48px;"><i class='fas fa-angle-right'></i > <b style="margin-left: 10px;">Customer Services </b></button>
+       
+       </div><br>
+    </div>
+    <div class="footer" style="margin-top: 48px;"><br>
+      <div class="subnavigation-container" style="background-color:whitesmoke;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="home5.svg"style="height: 50px;width: 50px;margin-right: 57px;">
+            </div>
+            <div class="col-sm-3">
+               <p style="letter-spacing: 1px;font-size: medium;margin-left: -135px;margin-top: 0px;">Try the UK’s leading visitor management app free for 15 days. Get started in only 5 minutes.</p>
+
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+               
+                <input type="email" class="form-control" style="border-radius: 25px; margin-left:0px;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email -optional">
+                
+              </div>
+
+            </div>
+            <div class="col-sm-3">
+              <button style=" background-color:limegreen;border-radius: 25px;color:white; width: 135px;height: 50px; border-color:limegreen; margin-left:-146px; margin-top: 0px;"><i class='fas fa-angle-right'></i > <b style="margin-left: 10px;">Start Trial </b></button>
+
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+      <div class="m-t-3"></div>
+      
+      <footer class="mainfooter" role="contentinfo">
+        
+        </div>
+        <div class="footer-middle">
+          <div class="container" style="background-color:whitesmoke;">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="footer-pad">
+                      <h4>Features</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="#"></a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px; ">Payment Center</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Contact Directory</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Forms</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">News and Updates</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">FAQs</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="footer-pad">
+                      <h4>Pricing</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="#"></a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Payment Center</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Contact Directory</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Forms</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">News and Updates</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">FAQs</a></li>
+                      </ul>
+                    </div>
+                    
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="footer-pad">
+                      <h4>About</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="#"></a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Payment Center</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Contact Directory</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Forms</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">News and Updates</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">FAQs</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="footer-pad">
+                      <h4>Education</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="#"></a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Payment Center</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Contact Directory</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Forms</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">News and Updates</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">FAQs</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="footer-pad">
+                      <h4>support</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="#"></a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Payment Center</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Contact Directory</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">Forms</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">News and Updates</a></li>
+                        <li><a href="#" style="color:black;letter-spacing: 1px;">FAQs</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="#" ><img src="home19.webp"></a>
+
+              </div>
+              <div class="col-sm-4">
+                <a href="#" ><img src="home18.webp"></a>
+             
+
+              </div>
+              <div class="col-sm-4">
+                <a href="#" ><img src="home17.webp"></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-botoom"><br>
+          <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p style="text-align: center;"> © 2020 Sign In App Ltd - Registered Office: 3A Green Lodge Barn, Roman Road, Northampton, NN7 4HD - Registration No: 08516772 - Registered in England. ISO27001 Information Security Management - Certificate No. DK20022018ATC
+    
+                    </p>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <a href="#" ><img src="home6.svg" style="width: 30px;height: 30px; margin-left: 452px;"></img></a>
+
+                </div>
+                <div class="col-sm-4">
+                  <a href="#" ><img src="home7.svg" style="width: 30px;height: 30px; margin-left: 114px;"></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="#" ><img src="home8.svg" style="width: 30px;height: 30px;margin-left: -227px;"></a>
+
+                </div>
+              </div>
+          </div>
+        </div>
+
+          
+      </footer>
+    </div>
+    <script> 
+    $('.video').parent().click(function () {
+  if($(this).children(".video").get(0).paused){   
+         $(this).children(".video").get(0).play();   $(this).children(".playpause").fadeOut();
+    }else{       $(this).children(".video").get(0).pause();
+  $(this).children(".playpause").fadeIn();
+    }
+  });
+ 
+
+
+      </script> 
+      <script>
+        $(document).ready(function(){
+  $('div#txt_cont div:gt(0)').css('display', 'none');
+  $('#category ul li a').click(function(event){
+    event.preventDefault();
+    var id_tab = $(this).attr('href');
+    $('#category ul li a').removeClass('hover_tab');
+    $(this).addClass('hover_tab');
+    $('div.txt_tab:visible').hide();
+    $(id_tab).show('slide');
+  });
+});
+      </script>
+       <script>
+        $(window).scroll(function(){
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+        </script>
+        
+        </script>
+        <script>
+        (function() {
+            
+            function Slideshow( element ) {
+                this.el = document.querySelector( element );
+                this.init();
+            }
+            
+            Slideshow.prototype = {
+                init: function() {
+                    this.wrapper = this.el.querySelector( ".slider-wrapper" );
+                    this.slides = this.el.querySelectorAll( ".slide" );
+                    this.previous = this.el.querySelector( ".slider-previous" );
+                    this.next = this.el.querySelector( ".slider-next" );
+                    this.index = 0;
+                    this.total = this.slides.length;
+                    this.timer = null;
+                    
+                    this.action();
+                    this.stopStart();	
+                },
+                _slideTo: function( slide ) {
+                    var currentSlide = this.slides[slide];
+                    currentSlide.style.opacity = 1;
+                    
+                    for( var i = 0; i < this.slides.length; i++ ) {
+                        var slide = this.slides[i];
+                        if( slide !== currentSlide ) {
+                            slide.style.opacity = 0;
+                        }
+                    }
+                },
+                action: function() {
+                    var self = this;
+                    self.timer = setInterval(function() {
+                        self.index++;
+                        if( self.index == self.slides.length ) {
+                            self.index = 0;
+                        }
+                        self._slideTo( self.index );
+                        
+                    }, 2000);
+                },
+                stopStart: function() {
+                    var self = this;
+                    self.el.addEventListener( "mouseover", function() {
+                        clearInterval( self.timer );
+                        self.timer = null;
+                        
+                    }, false);
+                    self.el.addEventListener( "mouseout", function() {
+                        self.action();
+                        
+                    }, false);
+                }
+                
+                
+            };
+            
+            document.addEventListener( "DOMContentLoaded", function() {
+                
+                var slider = new Slideshow( "#main-slider" );
+                
+            });
+            
+        })();
+        
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
